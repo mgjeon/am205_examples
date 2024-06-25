@@ -1,0 +1,3 @@
+https://www.netlib.org/paranoia/paranoia.c
+
+gcc -o paranoia paranoia.c
