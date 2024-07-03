@@ -1,0 +1,10 @@
+python .\v_inter.py > out
+
+Windows => out -> if UTF-16LE, gnuplot can't read it. Convert it to UTF-8.
+
+gnuplot
+
+set xlabel 'x'
+set ylabel 'y'
+plot 'out' u 1:2 t 'Interpolant' w l lw 5, 'out' u 1:3 t 'exp(-x)' w l lw 2
+plot 'out' u 1:4 t 'Difference' w l lw 3, 0 lt 0

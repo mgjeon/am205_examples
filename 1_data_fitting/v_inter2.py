@@ -30,10 +30,18 @@ yy2=np.array([exp(-q) for q in xx])
 yy3=np.array([f(q,b)-exp(-q) for q in xx])
 
 # Plot figure using Matplotlib
+# plt.figure()
+# plt.plot(xx,yy,label="Interpolant")
+# plt.plot(xx,yy2,label="exp(-x)")
+# plt.legend()
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.show()
+
 plt.figure()
-plt.plot(xx,yy,label="Interpolant")
-plt.plot(xx,yy2,label="exp(-x)")
+plt.plot(xx,yy3,label="Difference")
 plt.legend()
 plt.xlabel('x')
 plt.ylabel('y')
 plt.show()
+
